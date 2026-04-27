@@ -1,0 +1,92 @@
+{
+  "tree_metadata": {
+    "title": "Daily Reflection Tree",
+    "frameworks": ["Rotter (Locus)", "Dweck (Growth)", "Maslow (Radius)"],
+    "total_nodes": 25
+  },
+  "nodes": [
+    { "id": "1", "type": "start", "text": "The day is done. Ready to transform today's events into tomorrow's growth?", "next_node": "2" },
+
+    { "id": "2", "type": "question", "text": "Think of a friction point today. Was it a wall (unpassable) or a hurdle (jumpable)?", 
+      "options": [
+        {"text": "A wall. External factors stopped me.", "next_node": "3", "signal": "ext_locus"},
+        {"text": "A hurdle. I could have approached it differently.", "next_node": "4", "signal": "int_locus"}
+      ] 
+    },
+    { "id": "3", "type": "reflection", "text": "Even when the environment builds a wall, you own the response. How will you pivot tomorrow?", "next_node": "4" },
+    
+    { "id": "4", "type": "question", "text": "When a task got difficult, what was your first instinct?", 
+      "options": [
+        {"text": "To wait for more info or help.", "next_node": "5", "signal": "ext_locus"},
+        {"text": "To find a small part I could own immediately.", "next_node": "6", "signal": "int_locus"}
+      ] 
+    },
+    { "id": "5", "type": "reflection", "text": "Ownership starts small. Waiting is a choice to let others hold the wheel.", "next_node": "6" },
+
+    { "id": "6", "type": "question", "text": "Did you decide your priorities today, or did your inbox decide them?", 
+      "options": [
+        {"text": "I was reacting all day.", "next_node": "7", "signal": "ext_locus"},
+        {"text": "I drove my key tasks forward.", "next_node": "8", "signal": "int_locus"}
+      ] 
+    },
+    { "id": "7", "type": "reflection", "text": "Reaction feels like survival. Proaction feels like victory. Tomorrow, try a 'no-inbox' first hour.", "next_node": "8" },
+
+    { "id": "8", "type": "bridge", "text": "Control established. Now, let's look at the quality of your contribution.", "next_node": "9" },
+
+    { "id": "9", "type": "question", "text": "Did you focus on 'doing things right' or 'doing the right things'?", 
+      "options": [
+        {"text": "Just checking boxes and following orders.", "next_node": "10", "signal": "fixed"},
+        {"text": "Seeking ways to add real value.", "next_node": "11", "signal": "growth"}
+      ] 
+    },
+    { "id": "10", "type": "reflection", "text": "Box-checking is safe, but growth lives in the 'extra mile' you define for yourself.", "next_node": "11" },
+
+    { "id": "11", "type": "question", "text": "When you hit a gap in your knowledge, what happened?", 
+      "options": [
+        {"text": "I moved on to avoid slowing down.", "next_node": "12", "signal": "fixed"},
+        {"text": "I paused to learn or research the 'why'.", "next_node": "13", "signal": "growth"}
+      ] 
+    },
+    { "id": "12", "type": "reflection", "text": "The things we skip today become the technical debt of our career tomorrow.", "next_node": "13" },
+
+    { "id": "13", "type": "question", "text": "Are you finishing today more capable than you were this morning?", 
+      "options": [
+        {"text": "No, it was just routine.", "next_node": "14", "signal": "fixed"},
+        {"text": "Yes, I mastered a new detail.", "next_node": "15", "signal": "growth"}
+      ] 
+    },
+    { "id": "14", "type": "reflection", "text": "Routine is for machines. Mastery is for engineers. Find one new thing to track tomorrow.", "next_node": "15" },
+
+    { "id": "15", "type": "bridge", "text": "Mindset checked. Finally, how far did your impact reach?", "next_node": "16" },
+
+    { "id": "16", "type": "question", "text": "Did you actively look for a way to make a teammate's life easier today?", 
+      "options": [
+        {"text": "I was too focused on my own survival.", "next_node": "17", "signal": "self"},
+        {"text": "Yes, I offered help or shared knowledge.", "next_node": "18", "signal": "altro"}
+      ] 
+    },
+    { "id": "17", "type": "reflection", "text": "Solo survival is exhausting. Team-based growth is sustainable.", "next_node": "18" },
+
+    { "id": "18", "type": "question", "text": "Did you write or build with the 'next person' in mind?", 
+      "options": [
+        {"text": "I just wanted to get it off my plate.", "next_node": "19", "signal": "self"},
+        {"text": "I left it clean and documented.", "next_node": "20", "signal": "altro"}
+      ] 
+    },
+    { "id": "19", "type": "reflection", "text": "The mark of an expert is work that doesn't require a question from the person who follows you.", "next_node": "20" },
+
+    { "id": "20", "type": "question", "text": "Whose goals did you prioritize today?", 
+      "options": [
+        {"text": "My own personal targets.", "next_node": "21", "signal": "self"},
+        {"text": "The success of the wider project/user.", "next_node": "21", "signal": "altro"}
+      ] 
+    },
+    { "id": "21", "type": "decision", "text": "Calculating your path profile...", "next_nodes": ["22", "23", "24"] },
+
+    { "id": "22", "type": "summary", "text": "THE VICTOR: You owned your actions, sought growth, and lifted others. You are a leader in the making.", "next_node": "25" },
+    { "id": "23", "type": "summary", "text": "THE SOLO SPECIALIST: You have great ownership and growth, but your radius is narrow. Focus on empathy tomorrow.", "next_node": "25" },
+    { "id": "24", "type": "summary", "text": "THE PASSENGER: Today, you were driven by the world. Tomorrow, take the wheel of your own learning.", "next_node": "25" },
+
+    { "id": "25", "type": "end", "text": "Reflection complete. Rest now. Your potential resets at dawn." }
+  ]
+}
